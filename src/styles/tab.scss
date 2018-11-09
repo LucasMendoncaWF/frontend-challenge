@@ -1,0 +1,40 @@
+@import './fontsAndVariables.scss';
+
+.tab{
+    background-color: #31383c;
+    width: 100%;
+    height: 62px;    
+    border-top: 2px solid #272727;
+    cursor: pointer;
+
+    .tab-title{
+        color: white;
+        text-align: right;
+        font-family: Roboto-Ligth;
+        font-size: 18px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+    &:hover{
+            background-color: rgb(35, 172, 172);
+            box-shadow: inset -2px -20px 20px 0px #229292;
+            border-top: 2px solid rgb(35, 172, 172);
+
+        .tab-title{
+            opacity: 0.7;
+        }
+    }
+}
+
+.tab-not-selected{
+    background-color: #31383c;
+    box-shadow: inset -2px -20px 20px 0px #333;
+    border-top: 2px solid #272727;     
+}
+
+.tab-selected{
+    background-color: rgb(35, 172, 172);
+    box-shadow: inset -2px -20px 20px 0px #229292;
+    border-top: 2px solid rgb(35, 172, 172);
+}

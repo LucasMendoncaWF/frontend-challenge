@@ -1,0 +1,30 @@
+@import './fontsAndVariables.scss';
+
+.link{
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    .link-title{
+        text-align: right;
+        font-family: Roboto-Ligth;
+        font-size: 15px;      
+    }
+
+    .link-not-selected{
+        color: #656a6c;       
+    }
+
+    .link-selected{
+        color: white;   
+    }
+
+    &:hover{
+        .link-not-selected{
+            color:white;
+        }
+
+        .link-selected{
+            opacity: 0.7;   
+        }
+    }
+}

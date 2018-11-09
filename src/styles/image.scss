@@ -1,0 +1,77 @@
+@import './fontsAndVariables.scss';
+
+.image-container{
+    width: 25%;
+    height: 311px;
+    position: relative;
+
+
+    @media only screen and (max-width: 768px) {
+        width: 50%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        width: 100%;
+    }
+
+    .image-info-shadow{
+        position: absolute;
+        width: 100%;  
+        height: 100%; 
+        background-color: rgba(35, 172, 172, 0.8);
+        bottom: 0px;
+        animation: info-show;
+        animation-duration: 0.2s;
+
+        .image-info{
+            width: 200px;
+            height: 150px;
+            margin-left: calc(50% - 100px);
+            margin-top: 80px;
+
+            .client-title{
+                font-size: 24px;
+                text-align: center;
+                color: white;
+                font-family: Roboto-Ligth;
+                margin-bottom: 5px;
+            }
+
+            .client-desc{
+                font-size: 12px;
+                text-align: center;
+                color: white;
+                font-family: Roboto;
+                margin-bottom: 10px;
+            }
+
+            .desc-line{
+                height: 1px;
+                background-color: white;
+                width: 30%;
+                margin-left: 35%;
+            }
+
+            .arrow-desc{
+                width: 60px;
+                height: 60px;
+                margin-left: calc(50% - 30px);
+                margin-top: 20px;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+@keyframes info-show {
+    from {
+        height:0%;
+    }
+    to {
+        height: 100%;
+    }
+}

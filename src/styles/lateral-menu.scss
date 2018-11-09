@@ -1,0 +1,35 @@
+@import './fontsAndVariables.scss';
+
+.lateral-menu-container{
+    width: calc(100% - 1620px);
+    background-color: #242b2e;
+    box-shadow: -2px -20px 30px 11px black;
+    z-index: 999;
+    position: relative;
+
+    .logo-area{
+        height: 100px;
+        width: 100%;
+        background-color: white;
+
+        .logo{
+            width: 116px;
+            height: 60px;
+            margin-left: calc(50% - 65px);
+            margin-top: 20px;
+        }
+    }
+
+    .all-rights{
+        text-align: right;
+        font-family: Roboto-Ligth;
+        font-size: 15px; 
+        color: #656a6c;  
+        padding-right: 20px;     
+    }
+
+    @media only screen and (max-width: 1620px) {
+        display: none;
+    }
+}
+

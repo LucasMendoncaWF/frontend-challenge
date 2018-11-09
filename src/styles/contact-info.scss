@@ -1,0 +1,52 @@
+@import './fontsAndVariables.scss';
+
+.contact-container{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    top: 0;
+    background-color: rgb(35, 172, 172);
+    z-index: 9999;
+    cursor: pointer;
+
+    .info-contact-ico{
+        width: 60px;
+        height: 60px;
+        margin: calc(50% - 30px);
+    }
+
+    .contact-info{
+        display: none;
+        height: 100px;
+        width: 240px;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        .info{
+            color:white;
+            margin: 10px;
+            font-size: 14px;
+            font-family: Roboto-Ligth;
+            display: flex;
+
+            .ico-info{
+                margin: 0px 5px;
+            }
+        }
+    }
+
+    &:hover{
+        background-color: #229292;
+
+        .contact-info{
+            display: block;
+        }
+
+        .info-contact-ico{
+            opacity: 0.7;
+        }
+    }
+}

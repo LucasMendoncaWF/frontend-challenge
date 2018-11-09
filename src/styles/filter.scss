@@ -1,0 +1,28 @@
+@import './fontsAndVariables.scss';
+
+.filter-container{
+    height: 250px;
+    position: relative;
+
+    .filter-content{
+        position: absolute;
+        right: 20px;
+
+        .filter-title{
+            color:rgb(35, 172, 172);
+            font-size: 16px;
+            font-family: Roboto-Ligth;
+            margin-top: 20px;       
+            position: absolute;
+            right: 0;
+
+            img{
+                margin-left: 10px;
+            }
+        }
+
+        .links{
+            margin-top: 60px;
+        }
+    }
+}
