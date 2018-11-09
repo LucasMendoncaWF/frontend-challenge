@@ -28,7 +28,7 @@ class ImageList extends Component {
         loadAPIInfo((response) => {
           var dados = JSON.parse(response);
           this.setState({imagesData: dados});
-         }, "http://www.mocky.io/v2/5be35d6a2f00006b00ca2319");
+         }, "http://www.mocky.io/v2/5be35d6a2f00006b00ca2319.json");
     }
     
     constructor(props) {
