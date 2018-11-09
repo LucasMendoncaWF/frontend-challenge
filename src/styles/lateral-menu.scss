@@ -1,7 +1,7 @@
 @import './fontsAndVariables.scss';
 
 .lateral-menu-container{
-    width: calc(100% - $imageListSite);
+    width: calc(100% - 1620px);
     background-color: $grayDark;
     box-shadow: -2px -20px 30px 11px $black;
     z-index: 999;
